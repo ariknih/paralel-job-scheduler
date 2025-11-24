@@ -16,15 +16,17 @@ A reproducible, low-noise analog front end for millivolt bridge sensors (e.g., M
 
 ### TINA-TI
 
-DC simulation with TINA-TI:
+AC simulation with TINA-TI:
 
 <img src="./images/AFE.png" width="600"> 
 
+<img src="./images/tina-ac-diag.jpg" width="500"> 
+
 Instrumentation amplifier gain:
 
-$$ G = 1 + \frac{49.4\text{k}\Omega}{R_g} $$
+$$ G = 1 + \frac{49.4\text{k}\Omega}{R_g} = 1 + \frac{49.4\text{k}\Omega}{470} \approx 105$$
 
-LM358 offset:
+TLC2272 offset:
 
 $$ \frac{56 \text{k}}{47\text{k} + 56 \text{k}} \times 3.3 V \approx 1.5 V$$
 
